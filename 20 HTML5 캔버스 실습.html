@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 HTML5 캔버스 실습</title>
+</head>
+<body>
+    <h1>canvs 실습</h1>
+    <canvas
+        id="myCanvas"
+        width="400"
+        height="200"
+        style="border: 3px dashed #262626;"
+    ></canvas>
+
+    <script>
+        let paper = document.getElementById("myCanvas");
+        let context = paper.getContext("2d");
+
+        let grd = context.createLinearGradient(100, 0, 300, 140);
+        grd.addColorStop(0, "#59422E");
+        grd.addColorStop(1, "#8C8377");
+        context.fillStyle = grd;
+        context.fillRect(10, 10, 380, 180);
+
+        context.fillStyle = "#B4B8BF";
+        context.font = "60px Blippo Blk BT";
+        context.fillText("Canvas", 100, 120);
+        context.fillStyle = "#35400F";
+        // 컴퓨터에 저장된 글꼴을 사용할 수 있다.
+        context.font = "60px Blippo Blk BT";
+        context.fillText("Canvas", 95, 115);
+    </script>
+</body>
+</html>

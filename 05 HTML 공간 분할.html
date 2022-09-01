@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05 HTML 공간분할</title>
+  </head>
+  <body>
+    <h1>블록 타입의 태그</h1>
+    <p style="border: 3px solid #73665f">p요소는 display 속성값이 블록인 요소입니다</p>
+    <h2 style="border: 3px solid #f25270">h요소는 display 속성값이 블록인 요소입니다</h2>
+    <ul style="border: 3px solid #bfb2aa">
+      <li>ul요소는 display 속성값이 블록입니다</li>
+      <li>ol요소도 display 속성값이 블록입니다</li>
+    </ul>
+    <div style="border: 3px solid #69788c">
+      div태그를 사용하였습니다. <br />
+      <h2>제목</h2>
+      <p>내용 작성</p>
+    </div>
+    
+    <hr>
+    <div style="background-color: #D9D9D9; color: #556273; text-align: center;"">
+        <h1>div요소를 이용한 스타일 적용</h1>
+        <p>여러 태그들의 스타일을 한 번에 적용할 수 있습니다</p>
+    </div>
+
+    <hr>
+    <h1>인라인 타입의 태그</h1>
+    <span style="background-color: yellowgreen;">span은 인라인 타입의 태그입니다</span>
+    <a href="" style="background-color: palegoldenrod;">a태그는 인라인 타입의 태그입니다</a>
+    <img src="" alt="이미지파일입니다" style="border: 2px solid olive;">
+
+    <hr>
+    <p>이렇게 <span style="border: 3px solid #F29F05;">span요소로 텍스트의 특정 부분을 묶은 후</span> 스타일을 적용할 수 있습니다</p>
+
+    <hr>
+    <h1>display 속성 바꾸기</h1>
+    <div style="border: 2px solid #2A708C; display: inline-block;">
+      <img src="./image01.jpg" alt="" width="300">
+      <img src="./image01.jpg" alt="" width="300">
+    </div>
+    <ul>
+      <li>style의 display 속성을 이용해서 원하는 속성으로 바꿀 수 있다.</li>
+      <li>div에서 display 속성으로는 inline-block을 많이 사용한다.</li>
+      <li>style에서 크기값이 작을 때는 반드시 단위기호를 사용해야 한다.</li>
+    </ul>
+
+    <hr>
+    <h1>iframe을 이용한 페이지 분할</h1>
+    <p>
+      <a href="./03 HTML 기본 요소.html" target="textIframe">기본 요소</a> <br>
+      <a href="./01 HTML의 텍스트 요소.html" target="textIframe">텍스트 요소로 돌아가기</a>
+    </p>
+    <iframe 
+      src="./01 HTML의 텍스트 요소.html" 
+      style="width: 100%; height: 300px; border: 3px dashed #D9B2A9;"
+      name="textIframe">
+    </iframe>
+
+    <hr>
+    <h1>공간 분할 실습</h1>
+    <div style="background-color: #2A708C; color: #F2F2F2; text-align: center;">
+      <h2>안내문</h2>
+      <p style="color: #F2F2F2;">안내사항입니다</p>
+    </div>
+    <div style="background-color: #D9B2A9; border: 3px solid #0D0D0D; width: 200px;">
+      <h2>사용할 언어</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+  </body>
+</html>

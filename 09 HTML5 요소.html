@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>09 HTML5 요소</title>
+    <style>
+      .head1 {
+        background-color: #F2836B;
+        color: #2C3D73;
+        height: 80px;
+        font-weight: bold;
+        font-size: large; 
+      }
+      nav { background-color: #2C3D73; color: #F2F2F2;}
+      a { color: #F2F2F2; text-decoration: none;}
+      main { 
+        background-color: #D9D9D9;
+        width: 45%;
+        display: inline-block;
+      }
+      section {
+        background-color: #8C8B88;
+        width: 45%;
+        display: inline-block;
+      }
+      figure { background-color: #595856; }
+      footer { background-color: #031059; color: #F2F2F2; }
+    </style>
+  </head>
+  <body>
+    <header class="head1">전체 문서에 대한 헤더(header)</header>
+
+    <nav>
+      링크들을 모아둘 수 있습니다 : 
+      <a href="">링크1 ㅣ</a>
+      <a href="">링크2 ㅣ</a>
+      <a href="">링크3</a>
+    </nav>
+
+    <main>
+      main 홈페이지의 내용 설명
+      <article>새로운 기사</article>
+      <article style="border: 2px solid #F24405">새로운 기사</article>
+      <article>새로운 기사</article>
+    </main>
+
+    <section>
+      <header style="border: 2px solid #F24405;">
+        섹션 부분에 대한 헤더(header)
+        <p>헤더 부분에 들어간 단락입니다</p>
+      </header>
+      섹션에서 새로운 내용 전달
+    </section>
+
+    <figure>
+      <img src="./image01.jpg" alt="이미지" width="300">
+      <figcaption>이미지에 대한 설명</figcaption>
+    </figure>
+
+    <footer>홈페이지의 대한 정보를 담은 푸터</footer>
+  </body>
+</html>

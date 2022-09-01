@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22 HTML 실습</title>
+  </head>
+  <body>
+    <h1>기사 제목입니다</h1>
+    <main>
+      <figure>
+        <img src="image01.jpg" width="450" alt="" />
+        <figcaption>
+          위의 이미지는
+          <a href="https://unsplash.com/" target="_blank">언스플래쉬</a>에서
+          제공받았습니다.
+        </figcaption>
+      </figure>
+      <p>
+        기사 내용입니다. <br />
+        원하는시는 기사를 넣으셔도 됩니다.
+      </p>
+      <i>작성자 홍길동</i>
+      <hr />
+      이 기사에 대한 평가를 주세요 <br />
+      <form action="">
+        <input type="radio" name="survey" value="good" />좋아요
+        <input type="radio" name="survey" value="sad" />슬퍼요
+        <input type="radio" name="survey" value="angry" />화나요
+      </form>
+      <br />
+      <p>격려의 메세지와 후원을 받고 있습니다.</p>
+      <form action="">
+        <label for="">닉네임</label>
+        <input type="text" />
+        <label for="">비밀번호</label>
+        <input type="password" /> <br />
+        <textarea
+          name="message"
+          id=""
+          cols="65"
+          rows="5"
+          placeholder="메세지를 남겨주세요"
+        ></textarea>
+        <br />
+        <label for="">후원금 : </label>
+        <input type="number" value="0" step="1000" />원
+        <br />
+        <u>1000원</u> 단위로 올라갑니다. 원하는 금액을 입력해주세요. <br /><br />
+        <input type="submit" value="제출" />
+      </form>
+      <hr />
+    </main>
+    <footer>회사소개ㅣ인재채용ㅣ제휴제안ㅣ개인정보처리방침ㅣ&copy; 뉴스</footer>
+  </body>
+</html>

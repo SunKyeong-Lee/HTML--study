@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19 HTML5 캔버스</title>
+</head>
+<body>
+    <h1>canvas</h1>
+    <canvas 
+        id="myCanvas" 
+        width="200"
+        height="100"
+        style="border: 1px solid black;"
+    ></canvas>
+
+    <script>
+        /* 
+            자바스크립트는 오류 확인을 브라우저에서 가능하다. 
+            (개발자 도구 F12 - console)
+            자바스크립트는 브라우저 환경에서 실행되기 때문
+            html파일에서 작성할 때는 오류를 확인할 수 없다.
+        */
+        // html에서 id 값을 통해 요소를 가져온다.
+        let paper = document.getElementById("myCanvas");
+        let context = paper.getContext("2d");
+
+        // context를 통해서 그림을 그릴 수 있다.
+        // fillStyle을 사용하여 색 지정
+        context.fillStyle = "#BF3030";
+        // fillRect를 이용하여 x, y, width. height 지정하여 사각형 그리기
+        context.fillRect(0, 0, 150, 75);
+
+        // 선 긋는 메소드
+        context.strokeStyle = "#6C2EF2";
+        context.moveTo(0, 0);
+        context.lineTo(200, 100);
+        context.stroke();
+
+        // 원을 그리는 방법
+        context.strokeStyle = "#F2A444";
+        context.beginPath();  // 먼저 path를 시작하는 것을 알린다.
+        context.arc(95, 50, 40, 0, 2*Math.PI);  // 원의 path 지정
+        context.stroke();
+        
+        // 글자를 작성하는 방법
+        context.fillStyle = "#F2E63D";
+        context.font = "30px Blippo Blk BT";
+        context.fillText("Hello World", 10, 50);
+        context.strokeStyle = "#03A66A";
+        context.strokeText("Hello World", 10, 50);
+
+        // 그라디언트 넣는 법
+        // 그라디언트 생성
+        let grd = context.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0, "#BF5E93");
+        grd.addColorStop(1, "#F2A74B");
+
+        // 그라디언트 사용
+        context.fillStyle = grd;
+        context.fillRect(10, 10, 150, 80);
+    </script>
+</body>
+</html>

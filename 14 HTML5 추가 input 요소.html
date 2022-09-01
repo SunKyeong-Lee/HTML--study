@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14 HTML5 추가 input 요소</title>
+    <!-- input의 display는 inline이나 확인을 위해 block으로 설정 -->
+    <style>
+      input {display: block;}
+      span {background-color: wheat;}
+      p {line-height: 50%;}
+    </style>
+  </head>
+  <body>
+    <h1>추가된 input 요소</h1>
+    <p>최소값 0, 최대값 100, 값이 10씩 올라간다.</p>
+    <p>커서를 올리면 숫자 크기를 조절할 수 있는 상하버튼이 보인다.</p>
+    <input type="number" value="10" step="10" max="100" min="0" />
+
+    <hr />
+    <p>최소값 0, 최대값 10을 설정해서 10단계로 조절이 가능하다.</p>
+    <p>value 값에 따라 처음에 보이는 바의 버튼 위치가 달라진다.</p>
+    <input type="range" min="0" max="10" value="8" />
+
+    <hr />
+    <p>컬러 팔레트 열어 색을 지정할 수 있다.</p>
+    <input type="color" value="#556273" />
+
+    <hr />
+    <p>날짜를 지정할 수 있다</p>
+    <p>
+      min 속성을 사용해서 <span>이전</span>의 날짜를 선택할 수 없게 할 수 있다.
+    </p>
+    <p>
+      max 속성을 사용해서 <span>이후</span>의 날짜를 선택할 수 없게 할 수 있다.
+    </p>
+    <input type="date" value="2022-08-24" min="2022-08-23" />
+
+    <hr />
+    <p>날짜와 시간 입력</p>
+    <input type="datetime" />
+    <p>월(month) 입력</p>
+    <input type="month" />
+    <p>주(week) 입력</p>
+    <input type="week" />
+
+    <hr />
+    <p>input의 email 타입은 입력받은 값에 @가 있는지 없는지를 확인해준다.</p>
+    <input type="email" />
+    <p>url주소 입력</p>
+    <input type="url" />
+    <p>전화번호 입력</p>
+    <input type="tel" />
+    <p>검색어 입력</p>
+    <input type="search" />
+
+    <hr />
+    <h1>추가된 input 요소의 속성</h1>
+    <form action="" autocomplete="on">
+      <input
+        type="text"
+        name="value"
+        autofocus
+        placeholder="아무값이나 입력하세요"
+        required
+      />
+      <input type="submit" value="제출" />
+    </form>
+  </body>
+</html>
